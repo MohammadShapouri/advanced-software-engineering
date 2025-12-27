@@ -93,37 +93,25 @@ In the professional world, an SDM (often called a "Software Process Model") is a
 
 ---
 
-### 2. Part One: The Modeling Language
-The slide describes this as a set of conventions comprising **Syntax and Semantics**.
+### **2. The Two Main Parts of an SDM**
+According to the Unified Process, a methodology is split into two distinct but complementary parts: the **Static** part (the Language) and the **Dynamic** part (the Process).
 
-**Extended Detail:**
-A modeling language is the **"Vocabulary"** of the project. It allows engineers to visualize the system before building it, much like an architect uses blueprints.
+#### **Part I: The Modeling Language (The Syntax and Semantics)**
+This is the "vocabulary" and "grammar" used to describe the system. In USDP, this is almost always the **Unified Modeling Language (UML)**.
+*   **Syntax (The Notation):** This refers to the rules for what the diagrams look like. Just as English has rules for punctuation and spelling, UML has rules for how to draw a "Use Case" (an oval) or a "Class" (a rectangle). It ensures that a diagram drawn by a developer in London is understood perfectly by a developer in New York.
+*   **Semantics (The Meaning):** This is the most important part. It defines what the symbols *actually mean*. For example, the semantics of an "include" relationship between two Use Cases specifies that the behavior of one is strictly required by the other. Without agreed-upon semantics, different team members might interpret the same diagram in different ways.
 
-*   **Syntax (The Grammar):** This defines the rules for how the symbols look and are combined. For example, in UML (Unified Modeling Language), a "Class" is a box, and an "Inheritance" relationship is a solid line with a hollow arrow. If you draw it differently, you have violated the syntax.
-*   **Semantics (The Meaning):** This defines what those symbols actually *mean* in the real world. For example, if two boxes are connected by a line, the semantics tell us that these two software components must be able to send data to one another.
-*   **Why it's necessary:** It provides a "Common Language." It ensures that a developer in India and a tester in Germany looking at the same diagram understand exactly the same thing.
+#### **Part II: The Process (The "Recipe")**
+While the modeling language tells you *how to speak*, the Process tells you *what to say and when*. The process is the "dynamic" component that governs the behavior of the team. It has four specific roles as listed on the slide:
 
----
-
-### 3. Part Two: The Process
-While the Modeling Language is the vocabulary, the **Process** is the **"Instruction Manual."** The slide identifies four specific functions of a process:
-
-#### A. Guidance on the "Order of Activities"
-*   **Detail:** It defines the **Lifecycle**. Does the team gather all requirements first (Waterfall), or do they build a small piece and show it to the customer immediately (Agile)? The process dictates the flow of work from the "Idea" phase to the "Maintenance" phase.
-
-#### B. Specification of "Artifacts"
-*   **Detail:** An "artifact" is any tangible work product produced *during* development that is **not** the final code. 
-*   **Examples:** Requirement documents, Use Case diagrams, Test Plans, and User Manuals. The methodology tells the team: "To finish the Design phase, you *must* produce a Class Diagram and a Database Schema."
-
-#### C. Direction of "Tasks" (Individual vs. Team)
-*   **Detail:** This defines **Roles and Responsibilities**. 
-*   **Individual:** What is the developer’s specific task today? (e.g., writing a specific function).
-*   **Team:** How do we integrate our work? The process defines how the "whole" comes together, ensuring two people aren't working on the same thing or leaving a gap where no one is working on a critical feature.
-
-#### D. Criteria for "Monitoring and Measuring"
-*   **Detail:** This is the **Management** aspect of the methodology. 
-*   **Monitoring:** How do we know if we are 50% done or 90% done? (e.g., tracking "Story Points" or "Milestones").
-*   **Measuring:** This involves **Metrics**. How many bugs were found per 1,000 lines of code? Is the project over budget? A good methodology provides the "KPIs" (Key Performance Indicators) to judge if the project is succeeding or failing.
+1.  **Provides guidance as to the order of activities:**
+    *   It defines the "Workflow." It tells the team, "First, we capture requirements; then we analyze them; then we move to design." It prevents the team from jumping into coding before they understand the problem.
+2.  **Specifies what artifacts should be developed:**
+    *   **Artifacts** are the tangible "work products" produced during the project. This includes models (Use Case Models, Design Models), documents (Architecture Description, Risk List), and the code itself. The process ensures you don't waste time creating useless paperwork, but only the artifacts necessary to move to the next step.
+3.  **Directs the tasks of individual developers and the team:**
+    *   The process assigns **Roles**. It clarifies who is responsible for what. For example, the "Architect" is responsible for the overall structure, while the "Use-Case Specifier" is responsible for detailing user requirements. This eliminates confusion and overlapping efforts.
+4.  **Offers criteria for monitoring and measuring:**
+    *   A project is only successful if you can prove it is on track. The process provides **Milestones** (like the "Architecture Milestone" at the end of Elaboration). It gives managers a way to measure progress based on "demonstrable results" (e.g., "Is 80% of the use cases defined?") rather than just "gut feelings" or hours worked.
 
 ---
 
